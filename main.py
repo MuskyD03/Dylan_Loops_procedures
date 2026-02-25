@@ -70,12 +70,15 @@ def main():
 
     # create a List variable to store the books
     # HINT: []
+    books = ["'Dog Man', 'Captain Underpants', The Holy Bible"]
 
     # ------------------------------------------------------------
     # STEP 2:
     #   Use a for loop to print out each of the books from the variable in step 1
+    for book in books:
+        print(books)
     # ------------------------------------------------------------
-
+  
     # create a for loop and print out each book
     # for item in list
 
@@ -87,7 +90,10 @@ def main():
     # ------------------------------------------------------------
 
     # store the books that are checked out (number)
-
+    books_checked_out = len(books)
+    for i in range(books_checked_out):
+        print(books[i])
+    
     # iterate the books using range
     # for i in range
 
@@ -95,7 +101,16 @@ def main():
     print("Member Name:", member_name)
     print("Books Checked Out:", books_checked_out)
     print("Account Active:", account_is_active)
+    
+    def main():
+        books= ["'Dog Man', 'Captain Underpants', The Holy Bible"]
+        for book in books:
+            print(book)
 
+        books_checked_out = len(books)
+
+        for i in range(books_checked_out):
+            print(books[i])
     # ------------------------------------------------------------
     # STEP 4:
     #   Create a Function that checks the library rules. It should have
