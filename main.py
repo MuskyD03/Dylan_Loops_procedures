@@ -162,6 +162,21 @@ def main():
           print("please indicate you are ready to check out to proceed.")
     print("=" * 75)
 
+    def main():
+     answer="7"
+     is_correct_answer=False
+
+     while not is_correct_answer
+
+     guess=input("how many continents are there")
+
+     if guess == answer:
+         print("yay, you got it correct!")
+         is_correct_answer = True
+     else:
+         print("nope, that's not right try again")
+
+    
 
 if __name__ == "__main__":
     main()
