@@ -59,7 +59,7 @@ def main():
     print("=" * 75)
 
     # variables used in prior assignment
-    member_name = "John Smith"
+    member_name = "Dylan"
     books_checked_out = 3
     account_is_active = True
 
@@ -80,8 +80,12 @@ def main():
     # ------------------------------------------------------------
 
     # create a for loop and print out each book
-    # for item in list
 
+    # for item in list
+    for i in range (1000):
+        print("index:", i + 1)
+        print("move up")
+        print("fall down")
     # ------------------------------------------------------------
     # STEP 3:
     #   Update the books_checked_out variable to use len() function
@@ -161,3 +165,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
