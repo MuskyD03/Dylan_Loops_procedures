@@ -78,7 +78,7 @@ def main():
     for book in books:
         print(books)
     # ------------------------------------------------------------
-  
+
     # create a for loop and print out each book
     # for item in list
 
@@ -93,17 +93,18 @@ def main():
     books_checked_out = len(books)
     for i in range(books_checked_out):
         print(books[i])
-    
+
     # iterate the books using range
     # for i in range
 
     # after adding the loops, comment out or remove these print statements
+  
     print("Member Name:", member_name)
     print("Books Checked Out:", books_checked_out)
     print("Account Active:", account_is_active)
-    
+
     def main():
-        books= ["'Dog Man', 'Captain Underpants', The Holy Bible"]
+        books = ["'Dog Man', 'Captain Underpants', The Holy Bible"]
         for book in books:
             print(book)
 
@@ -111,6 +112,7 @@ def main():
 
         for i in range(books_checked_out):
             print(books[i])
+
     # ------------------------------------------------------------
     # STEP 4:
     #   Create a Function that checks the library rules. It should have
@@ -121,15 +123,17 @@ def main():
     # ------------------------------------------------------------
 
     # call your function here
-
     # conditional statement to check the library rules - remove this code
     # after you have added a function to replace it
-    if not account_is_active:
-        print("You must have an active account in order to check out any books.")
-    elif books_checked_out >= 5:
-        print("You cannot check out anymore books, 5 is the limit.")
-    else:
-        print("You can check out more books.")
+
+    def check_library_rules(account_is_active, books_checked_out):
+        if not account_is_active:
+            message = "you must have an active account in order to check out any books"
+        elif books_checked_out >= 5:
+            message = "you cannot check out anymore books, 5 is the limit"
+        else:
+            message = "you can check out more books."
+        return message
 
     # ------------------------------------------------------------
     # STEP 5:
@@ -141,6 +145,17 @@ def main():
 
     # add WHILE LOOP here
 
+    account_is_active = True
+    books_checked_out = 3
+
+    ready_to_checkout = ""
+    while ready_to_checkout.lower() != "yes":
+        ready_to_checkout = input("Are you ready to check out? Type 'yes' when ready: ")
+        if ready_to_checkout.lower() == "yes":
+          final_message =  check_library_rules(account_is_active, books_checked_out)
+          print(final_message)
+    else:
+          print("please indicate you are ready to check out to proceed.")
     print("=" * 75)
 
 
